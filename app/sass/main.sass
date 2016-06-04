@@ -54,6 +54,7 @@ ul
 	width: 100%
 	margin: auto
 	overflow: hidden
+	background-color: #F5F5F5 
 
 .w_1200
 	max-width: 1200px
@@ -66,22 +67,16 @@ b, strong
 	font-family: MuseoSansCyrl700
 
 .top
-	background-color: #36a6cf 
 	position: relative
 
 .top, .top .w_1200 
-	height: 95px
+	height: 90px
 
 .logo 
 	margin-top: 27px
 	display: block
 
 .col-mnu 
-	//position: absolute
-	//right: -50px
-	//bottom: 0
-	background-color: #F2F2F2 
-	margin-top: 15px
 	box-sizing: border-box
 
 .gray_line 
@@ -93,6 +88,11 @@ b, strong
 	background-color: #F2F2F2
 	z-index: 0
 
+.menu_wrap 
+	background-color: #293641
+	width: 100%
+	overflow: hidden
+
 
 .top_mnu
 	float: left
@@ -103,51 +103,53 @@ b, strong
 		text-align: center 
 		margin: 0
 	li 
-		display: inline-block
+		float: left
 		list-style: none
 		line-height: 1
-		margin: 0 25px
-		&:first-child 
-			margin-left: 20px
-		&:last-child 
-			margin-right: 20px
-		
+		margin: 0
 		
 	a 		
-		color: rgb(55, 55, 55)
+		font-family: MuseoSansCyrl100
+		font-size: 16px	
+		color: rgb(176, 197, 213)
+		color: #FFF
+		padding: 13px 47px
 		display: block
-		font-family: MuseoSansCyrl700
-		font-size: 14px
-		padding: 13px 0
-		line-height: 1
-		border-bottom: 2px solid #F2F2F2 
 		box-sizing: border-box
+		background-image: url("../img/line.png")
+		background-repeat: no-repeat
+		background-position: right center  
 		&:hover
-			border-bottom: 2px solid rgb(0, 101, 138)
+			color: rgb(176, 197, 213)
 			text-decoration: none
+			background-color: #324D63 
+			background-image: none 
 			
 .active a 
-	border-bottom: 2px solid rgb(0, 101, 138)
+	color: rgb(176, 197, 213)
 	text-decoration: none
+	background-color: #324D63 
+	background-image: none 
 	
 .top_phone
-	color: white
+	color: #000
 	font-family: MuseoSansCyrl700
 	font-size: 18px
 	text-transform: uppercase
 	margin-top: 20px
 	background: url("../img/top_icon_phone.png") no-repeat left center
 	padding-left: 22px
+	margin-left: 60px
 	float: left
-	margin-right: 75px
+	margin-right: 50px
 	
 .top_mail
 	box-sizing: border-box
 	margin-top: 21px
 	float: left
-	margin-right: 75px
+	margin-right: 60px
 	a
-		color: #fff
+		color: rgb(50, 77, 99)
 		font-family: MuseoSansCyrl700
 		font-size: 14px
 		text-decoration: underline
@@ -159,13 +161,14 @@ b, strong
 	float: left
 	background: url("../img/top_icon_adress.png") no-repeat left center
 	padding-left: 22px
-	color: #fff
+	color: #000
 	font-family: MuseoSansCyrl500
 	font-size: 12px
-	margin-top: 21px
+	margin-top: 14px
 	font-weight: 500 
 	line-height: 1.2
-	min-height: 14px
+	min-height: 16px
+	width: 205px
 
 .nopadding 
 	padding: 0 !important
@@ -364,7 +367,7 @@ b, strong
 	float: right
 	width: 870px
 	color: rgb(47, 47, 47)
-	font-family: MuseoSansCyrl300
+	font-family: MuseoSansCyrl100
 	font-size: 15px
 	line-height: 21px
 	p 
@@ -374,24 +377,23 @@ b, strong
 
 .banner 
 	margin-bottom: 25px
-		
 	
 h1 
 	color: rgb(47, 47, 47)
-	font-family: MuseoSansCyrl700
-	font-size: 30px
-	margin-bottom: 30px
+	font-family: MuseoSansCyrl100
+	font-size: 36px
+	margin-bottom: 22px
 	line-height: 1
 
 h2
 	color: rgb(47, 47, 47)
-	font-family: MuseoSansCyrl700
+	font-family: MuseoSansCyrl100
 	font-size: 24px
 	margin-bottom: 20px
 
 h3
 	color: rgb(47, 47, 47)
-	font-family: MuseoSansCyrl900
+	font-family: MuseoSansCyrl100
 	font-size: 18px
 	margin-bottom: 20px
 
@@ -745,10 +747,10 @@ blockquote
 	clear: both
 
 .right 
-	float: right !important
+	float: left
 
 .left 
-	float: left !important
+	float: rirht
 
 
 
