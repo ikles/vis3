@@ -1096,13 +1096,18 @@ blockquote {
     .top_contacts > div {
       display: inline-block;
       float: none;
-      margin-top: 10px; }
+      margin-top: 5px; }
     .top_contacts .top_mail {
-      padding-top: 10px; } }
+      padding-top: 5px;
+      margin-bottom: 5px; } }
 
 @media only screen and (max-width: 640px) {
   .slider img {
     display: none; } }
+
+@media only screen and (max-width: 620px) {
+  .top_contacts .top_phone {
+    margin-top: 15px; } }
 
 @media only screen and (max-width: 570px) {
   .top_mail, .top_phone, .top_adress {
@@ -1147,6 +1152,8 @@ blockquote {
     font-size: 13px; } }
 
 @media only screen and (max-width: 400px) {
+  .top_phone {
+    font-size: 15px; }
   .price_table td {
     font-size: 11px; }
   .slider_text {
