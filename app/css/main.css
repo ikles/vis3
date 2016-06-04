@@ -519,13 +519,13 @@ h1 {
 h2 {
   color: #2f2f2f;
   font-family: MuseoSansCyrl100;
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 20px; }
 
 h3 {
   color: #2f2f2f;
   font-family: MuseoSansCyrl100;
-  font-size: 18px;
+  font-size: 24px;
   margin-bottom: 20px; }
 
 .img_block {
@@ -768,8 +768,8 @@ h3 {
   padding-bottom: 3px; }
   .content .bread li {
     float: left;
-    font-size: 12px;
-    font-family: MuseoSansCyrl500;
+    font-size: 14px;
+    font-family: MuseoSansCyrl100;
     margin-bottom: 10px;
     margin: 0;
     padding: 0;
@@ -778,23 +778,23 @@ h3 {
     .content .bread li:before {
       content: ""; }
     .content .bread li a {
-      font-size: 12px;
+      font-size: 14px;
       color: black;
       text-decoration: underline; }
       .content .bread li a:hover {
         text-decoration: none; }
       .content .bread li a:after {
-        line-height: 0.8;
-        font-size: 12px;
-        font-family: MuseoSansCyrl500;
-        content: ">";
+        line-height: 1;
+        font-size: 14px;
+        font-family: MuseoSansCyrl100;
+        content: "/";
         color: #000;
         float: right;
-        margin-right: 10px;
-        margin-left: 10px;
+        margin-right: 5px;
+        margin-left: 5px;
         display: inline; }
     .content .bread li span {
-      color: #36a6cf; }
+      color: #324d63; }
 
 .content li {
   margin-bottom: 13px;
@@ -802,7 +802,7 @@ h3 {
 
 .content ul li {
   padding-left: 35px;
-  background: url("../img/def.png") no-repeat left 0 top 10px; }
+  background: transparent url("../img/check.png") no-repeat scroll left center; }
 
 .content ol {
   list-style-type: none;
@@ -810,17 +810,19 @@ h3 {
   .content ol li:before {
     content: counter(num) " ";
     counter-increment: num;
-    color: #fff000;
-    font-family: MuseoSansCyrl700;
-    font-size: 16px;
-    width: 25px;
-    height: 25px;
-    background-color: #36a6cf;
+    color: #fffd26;
+    font-family: MuseoSansCyrl900;
+    font-size: 14px;
+    width: 21px;
+    height: 21px;
+    background-color: black;
     text-align: center;
     display: block;
     float: left;
-    line-height: 1.7;
-    margin-right: 10px; }
+    line-height: 1.45;
+    margin-right: 10px;
+    -webkit-border-radius: 40px;
+            border-radius: 40px; }
 
 .lists {
   margin-bottom: 40px;
@@ -834,16 +836,17 @@ h3 {
   overflow: hidden; }
 
 blockquote {
-  background-color: #F2F2F2;
-  color: #36a6cf;
-  font-family: MuseoSansCyrl300;
+  background-color: #70b9e6;
+  color: #000;
+  font-family: MuseoSansCyrl100;
   font-size: 15px;
   line-height: 21px;
-  padding: 25px 60px;
+  padding: 12px 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   blockquote:before {
     position: absolute;
     top: 10px;
@@ -851,8 +854,8 @@ blockquote {
     line-height: 1;
     background-image: url("../img/left_quote.png"); }
   blockquote b {
-    color: #2f2f2f;
-    font-family: MuseoSansCyrl500;
+    color: #fff;
+    font-family: MuseoSansCyrl100;
     font-size: 15px; }
   blockquote:after {
     margin-bottom: 15px;
@@ -867,11 +870,19 @@ blockquote {
     background-repeat: no-repeat;
     background-position: 0 0; }
 
+.rounded {
+  -webkit-border-radius: 100px;
+          border-radius: 100px;
+  overflow: hidden; }
+
 .ml0 {
   margin-left: 0 !important; }
 
 .mb0 {
   margin-bottom: 0 !important; }
+
+.p0 {
+  padding: 0 !important; }
 
 .tags {
   height: 50px;

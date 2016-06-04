@@ -427,13 +427,13 @@ h1
 h2
 	color: rgb(47, 47, 47)
 	font-family: MuseoSansCyrl100
-	font-size: 24px
+	font-size: 30px
 	margin-bottom: 20px
 
 h3
 	color: rgb(47, 47, 47)
 	font-family: MuseoSansCyrl100
-	font-size: 18px
+	font-size: 24px
 	margin-bottom: 20px
 
 .img_block 
@@ -675,8 +675,8 @@ h3
 		padding-bottom: 3px
 		li 
 			float: left
-			font-size: 12px
-			font-family: MuseoSansCyrl500
+			font-size: 14px
+			font-family: MuseoSansCyrl100
 			margin-bottom: 10px
 			margin: 0
 			padding: 0
@@ -686,24 +686,24 @@ h3
 				content: "" 
 			
 			a
-				font-size: 12px
+				font-size: 14px
 				color: black
 				text-decoration: underline
 				&:hover 
 					text-decoration: none
 				
 				&:after 
-					line-height: 0.8
-					font-size: 12px
-					font-family: MuseoSansCyrl500
-					content: ">"
+					line-height: 1
+					font-size: 14px
+					font-family: MuseoSansCyrl100
+					content: "/"
 					color: #000 
 					float: right
-					margin-right: 10px
-					margin-left: 10px
+					margin-right: 5px
+					margin-left: 5px
 					display: inline
 			span
-				color: rgb(54, 166, 207)
+				color: rgb(50, 77, 99)
 
 .content 
 	li 
@@ -712,7 +712,7 @@ h3
 	ul 
 		li 
 			padding-left: 35px
-			background: url("../img/def.png") no-repeat left 0 top 10px
+			background: rgba(0, 0, 0, 0) url("../img/check.png") no-repeat scroll left center 
 			
 	ol 
 		list-style-type: none
@@ -721,17 +721,18 @@ h3
 			&:before 
 				content: counter(num) ' '
 				counter-increment: num
-				color: rgb(255, 240, 0)
-				font-family: MuseoSansCyrl700
-				font-size: 16px			
-				width: 25px
-				height: 25px
-				background-color: rgb(54, 166, 207)
+				color: rgb(255, 253, 38)
+				font-family: MuseoSansCyrl900
+				font-size: 14px			
+				width: 21px
+				height: 21px
+				background-color: rgb(0, 0, 0)
 				text-align: center
 				display: block
 				float: left
-				line-height: 1.7
+				line-height: 1.45
 				margin-right: 10px
+				border-radius: 40px
  
 .lists 
 	margin-bottom: 40px
@@ -745,15 +746,16 @@ h3
 	overflow: hidden
 
 blockquote
-	background-color: #F2F2F2 
-	color: rgb(54, 166, 207)
-	font-family: MuseoSansCyrl300
+	background-color: #70b9e6 
+	color: #000
+	font-family: MuseoSansCyrl100
 	font-size: 15px
 	line-height: 21px
-	padding: 25px 60px
+	padding: 12px 25px
 	box-sizing: border-box
 	width: 100%
 	position: relative
+	overflow: hidden
 	&:before
     position: absolute
     top: 10px
@@ -761,8 +763,8 @@ blockquote
     line-height: 1
     background-image: url("../img/left_quote.png") 
 	b 
-		color: rgb(47, 47, 47)
-		font-family: MuseoSansCyrl500
+		color: #fff
+		font-family: MuseoSansCyrl100
 		font-size: 15px
 	&:after
   	margin-bottom: 15px
@@ -777,11 +779,20 @@ blockquote
 		display: block
 		background-repeat: no-repeat
 		background-position: 0 0 
+
+.rounded
+	border-radius: 100px
+	overflow: hidden
+
 .ml0 
 	margin-left: 0 !important
 	
 .mb0 
 	margin-bottom: 0 !important
+
+.p0 
+	padding: 0 !important
+
 
 .tags 
 	height: 50px
