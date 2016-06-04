@@ -918,6 +918,9 @@ blockquote {
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  .top_slider_wrap {
+    border-bottom: 2px solid #293641;
+    padding-bottom: 5px; }
   .content_banner img, .min_banner img {
     width: 100%; }
   .left_widget_vk > img {
@@ -1040,6 +1043,10 @@ blockquote {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .left_mnu li {
+    border-bottom: 1px solid #ccc; }
+  .footer_mail {
+    margin-bottom: 15px; }
   .top_contacts {
     margin-top: 0px; }
   .toggle-mnu {
